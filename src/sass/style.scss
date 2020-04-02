@@ -1,8 +1,51 @@
-$bgcolor:grey;
+$primaryColor:#56a79a;
+
 
 
 body{
-    background: $bgcolor;
-    margin: 0;
-    padding: 0;
-}
+    font-family:'Open-sans', sans-serif;
+    font-size:17px;
+    line-height:1.5em;
+    margin:0;
+    padding:0;
+  }
+  
+  img{
+    width:100%;
+  }
+
+  span{
+      color: $primaryColor;
+  }
+  
+  .container{
+    margin:auto;
+    
+  }
+  /* HEADER */
+#main-header{
+    border-bottom:1px solid $primaryColor;
+    background-image: url("/src/img/Merged\ bar-5.png");
+  }
+  
+  /* NAVBAR */
+  #navbar{
+    text-transform:uppercase;
+  }
+  
+  #navbar li{
+    display:inline;
+    padding-right:5em;
+    list-style:none;
+  }
+  
+  #navbar a{
+    text-decoration:none;
+    color:#888;
+  }
+  
+  #navbar li.current a, #navbar a:hover{
+    color:$primaryColor;
+    border-bottom: 3px solid $primaryColor;
+    padding-bottom:3px;
+  }

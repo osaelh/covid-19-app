@@ -1,4 +1,38 @@
 body {
-  background: grey;
+  font-family: 'Open-sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.5em;
   margin: 0;
   padding: 0; }
+
+img {
+  width: 100%; }
+
+span {
+  color: #56a79a; }
+
+.container {
+  margin: auto; }
+
+/* HEADER */
+#main-header {
+  border-bottom: 1px solid #56a79a;
+  background-image: url("/src/img/Merged bar-5.png"); }
+
+/* NAVBAR */
+#navbar {
+  text-transform: uppercase; }
+
+#navbar li {
+  display: inline;
+  padding-right: 5em;
+  list-style: none; }
+
+#navbar a {
+  text-decoration: none;
+  color: #888; }
+
+#navbar li.current a, #navbar a:hover {
+  color: #56a79a;
+  border-bottom: 3px solid #56a79a;
+  padding-bottom: 3px; }
