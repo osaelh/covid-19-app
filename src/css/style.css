@@ -17,22 +17,24 @@ span {
 /* HEADER */
 #main-header {
   border-bottom: 1px solid #56a79a;
-  background-image: url("/src/img/Merged bar-5.png"); }
+  background-image: url("/src/img/Merged bar-5.png");
+  padding: 0px 5vw; }
+  #main-header #navbar {
+    text-transform: uppercase; }
+    #main-header #navbar li {
+      display: inline;
+      padding-right: 5em;
+      list-style: none; }
+    #main-header #navbar a {
+      text-decoration: none;
+      color: #888; }
+    #main-header #navbar li.current a, #main-header #navbar #navbar a:hover {
+      color: #56a79a;
+      border-bottom: 3px solid #56a79a;
+      padding-bottom: 3px; }
 
-/* NAVBAR */
-#navbar {
-  text-transform: uppercase; }
-
-#navbar li {
-  display: inline;
-  padding-right: 5em;
-  list-style: none; }
-
-#navbar a {
-  text-decoration: none;
-  color: #888; }
-
-#navbar li.current a, #navbar a:hover {
-  color: #56a79a;
-  border-bottom: 3px solid #56a79a;
-  padding-bottom: 3px; }
+.sub-header {
+  background-color: #F4CF1B; }
+  .sub-header h2 {
+    color: #1078AD;
+    text-transform: uppercase; }

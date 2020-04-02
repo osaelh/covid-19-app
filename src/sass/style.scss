@@ -26,26 +26,30 @@ body{
 #main-header{
     border-bottom:1px solid $primaryColor;
     background-image: url("/src/img/Merged\ bar-5.png");
+    padding: 0px 5vw;
+    #navbar{
+      text-transform:uppercase;
+      li{
+      display:inline;
+      padding-right:5em;
+      list-style:none;
+    }
+    a{
+      text-decoration:none;
+      color:#888;
+    }
+    li.current a, #navbar a:hover{
+      color:$primaryColor;
+      border-bottom: 3px solid $primaryColor;
+      padding-bottom:3px;
+    }
+    }
   }
   
-  /* NAVBAR */
-  #navbar{
-    text-transform:uppercase;
-  }
-  
-  #navbar li{
-    display:inline;
-    padding-right:5em;
-    list-style:none;
-  }
-  
-  #navbar a{
-    text-decoration:none;
-    color:#888;
-  }
-  
-  #navbar li.current a, #navbar a:hover{
-    color:$primaryColor;
-    border-bottom: 3px solid $primaryColor;
-    padding-bottom:3px;
+  .sub-header{
+    background-color: #F4CF1B;
+    h2{
+      color: #1078AD;
+      text-transform: uppercase;
+    }
   }
