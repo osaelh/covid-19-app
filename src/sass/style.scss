@@ -1,70 +1,63 @@
-$primaryColor:#56a79a;
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendors/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/button';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';
 
 
 
-body{
-    font-family:'Open-sans', sans-serif;
-    font-size:17px;
-    line-height:1.5em;
-    margin:0;
-    padding:0;
-  }
-  
-  img{
-    width:100%;
-  }
+
+
+
 
   span{
       color: $primaryColor;
   }
   
-  .container{
-    margin:auto;
-    
-  }
+ 
   /* HEADER */
-#main-header{
-    border-bottom:1px solid $primaryColor;
-    background-image: url("/src/img/Merged\ bar-5.png");
-    padding: 0px 5vw;
-    #navbar{
-      text-transform:uppercase;
-      li{
-      display:inline;
-      padding-right:5em;
-      list-style:none;
-    }
-    a{
-      text-decoration:none;
-      color:#888;
-    }
-    li.current a, #navbar a:hover{
-      color:$primaryColor;
-      border-bottom: 3px solid $primaryColor;
-      padding-bottom:3px;
-    }
-    }
-  }
   
-  .sub-header{
-    background-color: #F4CF1B;
-    h2{
-      color: #1078AD;
-      text-transform: uppercase;
-      margin-top: 0;
-      padding-top: 1em;
-    }
-    p{
-      padding-bottom: 1em;
-    }
-  }
-
-.showcase{
-  .container{
-    margin: 0;
+// .showcase{
+//   .container{
+//     margin: 0;
     
-  }
-img{
-  width: 43VW;
-}
+//   }
+// img{
+//   width: 43VW;
+// }
+// }
+
+button{
+  @include button;
+  @include hover();
 }

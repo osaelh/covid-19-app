@@ -1,3 +1,46 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+#main-header{
+    border-bottom:1px solid $primaryColor;
+    background-image: url("/src/img/Merged\ bar-5.png");
+    img{
+        width: 25%;
+    }
+    // padding: 0px 5vw;
+    #navbar{
+      text-transform:uppercase;
+      li{
+      display:inline;
+      padding-right:5em;
+      list-style:none;
+    }
+    a{
+      text-decoration:none;
+      color:#888;
+    }
+    li.current a, #navbar a:hover{
+      color:$brand-color;
+      border-bottom: 3px solid $brand-color;
+      padding-bottom:3px;
+    }
+    
+    
+    }
+  }
+  
+  .sub-header{
+    background-color: #F4CF1B;
+    h2{
+      color: $brand-color;
+      text-transform: uppercase;
+      margin-top: 0;
+      padding-top: 1em;
+    }
+    p{
+      padding-bottom: 1em;
+    }
+  }
+  .logo {
+    height: 2em;
+}
