@@ -323,13 +323,6 @@ html {
 /**
  * Basic styles for links
  */
-a {
-  color: #1078AD;
-  text-decoration: none; }
-  a:hover, a:active, a:focus {
-    color: #222222;
-    text-decoration: underline; }
-
 h2 {
   color: #1078AD; }
 
@@ -361,16 +354,8 @@ body {
  * 3. Leave some space on the edges, especially valuable on small screens
  */
 .container {
-  max-width: 1180px;
-  /* 1 */
   margin-left: auto;
   /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
   width: 100%;
   /* 1 */ }
 
@@ -405,7 +390,7 @@ body {
   border-bottom: 1px solid #56a79a;
   background-image: url("/src/img/Merged bar-5.png"); }
   #main-header img {
-    width: 25%; }
+    width: 15%; }
   #main-header #navbar {
     text-transform: uppercase; }
     #main-header #navbar li {
@@ -416,6 +401,10 @@ body {
       text-decoration: none;
       color: #888; }
     #main-header #navbar li.current a, #main-header #navbar #navbar a:hover {
+      color: #1078AD;
+      border-bottom: 3px solid #1078AD;
+      padding-bottom: 3px; }
+    #main-header #navbar a:hover {
       color: #1078AD;
       border-bottom: 3px solid #1078AD;
       padding-bottom: 3px; }
@@ -433,10 +422,6 @@ body {
 .logo {
   height: 2em; }
 
-span {
-  color: #56a79a; }
-
-/* HEADER */
 button {
   text-transform: uppercase;
   background-color: lightblue;
@@ -446,14 +431,34 @@ button {
   text-decoration: none;
   display: block;
   font-size: 16px;
-  width: 200px;
   height: 40px;
   cursor: pointer;
   margin: 20px auto;
   border-radius: 1em;
-  width: 100%; }
+  width: 90%; }
   button:hover {
     box-shadow: 5px 15px 20px #ededed;
     color: #222222;
     background-color: darkblue;
     transform: translateY(-7px); }
+
+.symptoms .bottom-unit {
+  margin-top: 5em; }
+
+.symptoms .fiever {
+  width: 25%; }
+
+.recomendations {
+  background-color: #1078AD; }
+  .recomendations h4 {
+    padding-top: 2em; }
+  .recomendations p {
+    margin-left: 5em; }
+
+.call p {
+  background-color: #F4CF1B; }
+
+span {
+  color: #56a79a; }
+
+/* HEADER */

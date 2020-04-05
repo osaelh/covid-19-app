@@ -1,3 +1,25 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.symptoms{
+    .bottom-unit{
+        margin-top: 5em;
+    }
+   .fiever{
+       width: 25%;
+   }
+}
+.recomendations{
+    background-color: $brand-color;
+    h4{
+        padding-top: 2em;
+    }
+    p{
+        margin-left: 5em;
+    }
+}
+.call{
+    p{
+        background-color: #F4CF1B;
+    }
+}

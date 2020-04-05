@@ -5,9 +5,9 @@
     border-bottom:1px solid $primaryColor;
     background-image: url("/src/img/Merged\ bar-5.png");
     img{
-        width: 25%;
+        width: 15%;
     }
-    // padding: 0px 5vw;
+    
     #navbar{
       text-transform:uppercase;
       li{
@@ -23,8 +23,14 @@
       color:$brand-color;
       border-bottom: 3px solid $brand-color;
       padding-bottom:3px;
+      
     }
-    
+    a:hover{
+      color:$brand-color;
+      border-bottom: 3px solid $brand-color;
+      padding-bottom:3px;
+      
+    }
     
     }
   }
