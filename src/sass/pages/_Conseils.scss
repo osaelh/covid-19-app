@@ -1,0 +1,99 @@
+.prot{
+    padding-top: 2em;
+
+    h1{
+        font-weight: 700;
+        font-size: 1.5em;
+        text-align: center;
+        color: $brand-color;
+    }
+
+.Protege{
+   display: grid;
+   grid-template-columns: repeat(3, 33.33%);
+   padding-top: 1.5em;
+.cons {
+
+    padding: 3em;
+
+    &__img{
+        
+        text-align: center;
+         padding-right: 1em;
+         padding-bottom: 1em;
+         img{
+             width: 7em;
+         }
+    }
+    &__para{
+    
+        font-size: 1.2em;
+        font-weight: bold;
+        
+        color: $brand-color;
+        text-align: center;
+    }
+   }
+
+  }
+  .cons1{
+      text-align: center;
+      &__img{
+      
+        text-align: center;
+         padding-right: 1em;
+         padding-bottom: 1em;
+         img{
+            width: 7em;
+        }
+    }
+    &__para{
+        
+        font-size: 1.2em;
+        font-weight: bold;
+        
+        color:$brand-color;
+        text-align: center;
+    }
+  }
+}
+@media only screen and (max-width:900px){
+    .prot{
+       
+        .Protege{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            .cons {
+
+                &__img{
+                    
+    
+                     img{
+                         width: 4em;
+                     }
+                }
+                &__para{
+                    font-size: .9em;
+                 
+                }
+               }
+            
+              }
+              .cons1{
+                  text-align: center;
+                  &__img{
+                  
+
+                     img{
+                        width: 4em;
+                    }
+                }
+                &__para{
+                    
+                    font-size: .9em;
+                    font-weight: bold;
+                    text-align: center;
+                }
+              }
+    }
+}
