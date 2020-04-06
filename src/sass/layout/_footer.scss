@@ -1,3 +1,31 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+footer{
+    width: 98%;
+    h5{
+        font-weight: bold;
+        color: $brand-color;
+        font-size: 1.2em;
+        padding: 0;
+    }
+    h6{
+        padding: 0;
+    }
+    img{
+        margin-top: 1em;
+    }
+    .links{
+        margin-bottom: 4em;
+        color:$brand-color;
+      border-bottom: 3px solid $brand-color;
+      padding-bottom:3px;
+      width: 26%;
+      margin-left: 8em;
+    }
+    .ending{
+        height: 2em;
+        width: 102%;
+        background-color: $brand-color;
+    }
+}
