@@ -392,7 +392,7 @@ body {
   border-bottom: 1px solid #56a79a;
   background-image: url("/src/img/Merged bar-5.png"); }
   #main-header img {
-    width: 15%; }
+    width: 40%; }
   #main-header #navbar {
     text-transform: uppercase; }
     #main-header #navbar li {
@@ -423,6 +423,10 @@ body {
 
 .logo {
   height: 2em; }
+
+@media only screen and (max-width: 800px) {
+  #main-header img {
+    width: 5%; } }
 
 footer {
   width: 98%; }
