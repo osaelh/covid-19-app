@@ -446,6 +446,8 @@ footer {
     padding-bottom: 3px;
     width: 26%;
     margin-left: 8em; }
+    footer .links a {
+      text-decoration: none; }
   footer .ending {
     height: 2em;
     width: 102%;
