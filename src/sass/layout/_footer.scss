@@ -18,10 +18,9 @@ footer{
     .links{
         margin-bottom: 4em;
         color:$brand-color;
-      border-bottom: 3px solid $brand-color;
-      padding-bottom:3px;
-      width: 26%;
-      margin-left: 8em;
+        border-bottom: 3px solid $brand-color;
+        padding-bottom:1em;
+        width: 26%;
       a{
           text-decoration: none;
       }
@@ -30,5 +29,10 @@ footer{
         height: 2em;
         width: 102%;
         background-color: $brand-color;
+    }
+}
+@media only screen and (max-width:900px){
+    .links{
+        margin-left: 13em;
     }
 }

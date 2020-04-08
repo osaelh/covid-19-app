@@ -443,15 +443,18 @@ footer {
     margin-bottom: 4em;
     color: #1078AD;
     border-bottom: 3px solid #1078AD;
-    padding-bottom: 3px;
-    width: 26%;
-    margin-left: 8em; }
+    padding-bottom: 1em;
+    width: 26%; }
     footer .links a {
       text-decoration: none; }
   footer .ending {
     height: 2em;
     width: 102%;
     background-color: #1078AD; }
+
+@media only screen and (max-width: 900px) {
+  .links {
+    margin-left: 13em; } }
 
 button {
   text-transform: uppercase;
@@ -466,7 +469,8 @@ button {
   cursor: pointer;
   margin: 20px auto;
   border-radius: 1em;
-  width: 90%; }
+  width: 90%;
+  border: 2px solid #1078AD; }
   button:hover {
     box-shadow: 5px 15px 20px #ededed;
     color: #222222;
@@ -538,8 +542,13 @@ button {
   background-color: #1078AD; }
   .recomendations h4 {
     padding-top: 2em; }
+  .recomendations h5 {
+    color: white; }
   .recomendations p {
-    margin-left: 5em; }
+    margin-left: 5em;
+    color: white; }
+  .recomendations span {
+    color: #F4CF1B; }
 
 .call p {
   background-color: #F4CF1B; }
