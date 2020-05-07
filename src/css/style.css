@@ -474,7 +474,7 @@ button {
   button:hover {
     box-shadow: 5px 15px 20px #ededed;
     color: #222222;
-    background-color: darkblue;
+    background-color: lightskyblue;
     transform: translateY(-7px); }
 
 .prot {
@@ -531,6 +531,50 @@ button {
       font-size: .9em;
       font-weight: bold;
       text-align: center; } }
+
+.wrapper {
+  margin: 2em 10em; }
+  .wrapper .steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .wrapper .steps .step .bullet {
+      height: 2em;
+      width: 2em;
+      border-radius: 100%;
+      border: 1px solid #1078AD;
+      display: inline-block;
+      position: relative;
+      transition: background-color 500ms;
+      line-height: 20px; }
+  .wrapper #main {
+    background-color: #e9ecef;
+    min-height: 15em; }
+    .wrapper #main h3 {
+      text-align: center;
+      padding-top: 2em; }
+    .wrapper #main p {
+      line-height: 1.5;
+      margin-left: 2em;
+      margin-right: 2em;
+      padding-bottom: 1em;
+      text-align: center;
+      font: .8em sans-serif; }
+  .wrapper button {
+    width: 20em; }
+
+.bullet.completed {
+  color: white;
+  background-color: #28a745; }
+
+.bullet.completed::after {
+  content: '';
+  position: absolute;
+  right: -460px;
+  bottom: 15px;
+  height: 1px;
+  width: 460px;
+  background-color: #28a745; }
 
 .symptoms .bottom-unit {
   margin-top: 5em; }
