@@ -31,7 +31,7 @@
         </div>
       </header>
 
-      <div class="wrapper">
+      <div class="wrapper" id="container">
           <div class="steps">
               <div class="step">
                   
@@ -40,7 +40,7 @@
               </div>
               <div class="step">
                   <h3 class="step-text">Questionnaire</h3>
-                  <div class="bullet com"></div>
+                  <div class="bullet" id="bullet2"></div>
               </div>
               <div class="step">
                   <h3 class="step-text">Résultas</h3>
@@ -60,11 +60,30 @@
         <p> Cette application ne substitue pas votre médecin qui est plus apte à vous donner plus de précision.
             Les informations de cette application est le premier niveau de la détection des cas possibles du COVID-19. </p>
         </div>
-        <button class="home__title--btn">
+        <button class="home__title--btn" id="start">
              Démarrer le test</button>
 
     </div>
+    <form id="form">
+        <div class="numerotation">
+          <div class="relative">
+            <div class="progressbar">
 
+            </div>
+            <progress id="file" max="22"> </progress>
+          </div>
+          <p id="afficheNum"></p>
+        </div>
+        <div class="questions">
+        </div>
+        <div class="inputs">
+          <input type="submit" value="precedent" id="precedent">
+          <input type="submit" value="suivant" id="suivant">
+          <input type="submit" value="afficher le resultat" id="resultat" class="affiche">
+        </div>
+      </form>
+
+      
 
 
 
@@ -124,3 +143,5 @@
       
         </div>
       </footer>
+      <script src="/src/scripts/main.js"></script>
+</body>

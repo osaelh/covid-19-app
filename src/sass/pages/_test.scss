@@ -54,3 +54,88 @@
 	width: 460px;
 	background-color: #28a745;
 }
+.main__questionnaire, .main__Resultat {
+    text-align: center;
+    padding-top: 7em;
+}
+.barNumber, form {
+    border: 3px solid #96c5dc;
+    border-radius: 1em;
+}
+form {
+    display: none;
+    padding: 2em 4em;
+    max-width: 65%;
+    margin: 3em auto;
+}
+.numerotation {
+    display: flex;
+    justify-content: space-between;
+}
+.relative {
+    position: relative;
+    width: 100%;
+}
+.progressbar {
+    height: 2em;
+    width: 85%;
+    margin-top: 1.5em;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 10px solid #1a519e;
+    margin-left: 10%;
+}
+#file {
+    margin-top: 1.5em;
+    width: 83.1%;
+    margin-left: 10%;
+    position: absolute;
+    top: 8px;
+    right: 5.9%;
+}
+.numerotation p {
+    font-size: 2em;
+    font-weight: 700;
+    color: #1a519e;
+}
+.questions p {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #7f7f7f;
+    height: 15vh;
+    padding-top: 5%;
+}
+.answer-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+}
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+.inputs #precedent, .inputs #resultat, .inputs #suivant {
+    border: 1px dotted #1a519e;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: #1078ad;
+}
+#resultat, .inputs #suivant {
+    border: 1px dotted #1a519e;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: #1078ad;
+}
+#resultat, .inputs #suivant {
+    border: 1px dotted #1a519e;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: #1078ad;
+}
