@@ -80,7 +80,7 @@ let resultMessage2 = document.querySelector('.end2')
 console.log(previousBtn)
 let currentQuestionIndex = 0;
 
-
+// start test (hiding startbtn and preambule ,showing question section)
 startBtn.addEventListener("click", startTest);
 function startTest() {
   stepper[0].classList.remove("active");
@@ -92,7 +92,7 @@ function startTest() {
   startBtn.disabled = true;
   showQuestion(questions[currentQuestionIndex]);
 }
-
+//pushing the question and answer
 function showQuestion(question) {
   currentquestion.innerText = question.question;
   answerInputs.innerHTML = "";
@@ -116,7 +116,7 @@ function showQuestion(question) {
 }
 
 nextBtn.addEventListener('click', nextQuestion)
-
+//showing next question by incrementing the index and stopping when reaching index n3 ()
 function nextQuestion() {
   if (currentQuestionIndex < 3) {
     currentQuestionIndex++;
@@ -154,6 +154,8 @@ function nextQuestion() {
         nextBtn.classList.remove("result");
     }
   }
+
+  // parsing number , disabling nextbtn when out of min-max range
   inputBox.addEventListener("change", (event) => {
     let input = event.target;
 
