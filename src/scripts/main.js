@@ -16,15 +16,15 @@ let questions = [{
   },
 },
 {
-  question: "Quelle est votre température corporelle ?",
+  question: "Quel est votre âge ? Ceci, afin de calculer un facteur de risque spécifique.",
 
-  input: {
-      type: "number",
-      qNumber: "Q2",
-      name: "degrés",
-      min: 34,
-      max: 42,
-  },
+    input: {
+        type: "number",
+        qNumber: "Q2",
+        name: "ans",
+        min: 15,
+        max: 110,
+    },
 },
 {
   question: "Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?",
@@ -164,7 +164,6 @@ function nextQuestion() {
 
         if (number >= input.min && number <= input.max) {
             answers[input.name] = input.value;
-            console.log(answers);
 
             nextBtn.disabled = false;
         } else {
