@@ -553,22 +553,7 @@ button {
     margin: 30px 0; }
 
 #start {
-  width: 20em;
-  font-size: 22px;
-  font-weight: bolder;
-  color: white;
-  background-color: #1a519e;
-  padding: 10px 30px 10px;
-  border: 3px solid #1a519e;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all .3s ease;
-  margin: 10px auto 50px;
-  margin-left: 50%;
-  transform: translateX(-50%); }
-  #start:hover {
-    color: #1a519e;
-    background-color: transparent; }
+  width: 30em; }
 
 .stepper {
   padding: 55px 15% 10px;
@@ -751,6 +736,31 @@ button {
     padding-top: 1EM; }
   .test button {
     width: 30em; }
+
+a.home__title--btn {
+  max-width: 30em;
+  text-transform: uppercase;
+  background-color: lightblue;
+  border: none;
+  color: #1078AD;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  cursor: pointer;
+  margin: 20px auto;
+  border-radius: 1em;
+  width: 90%;
+  border: 2px solid #1078AD; }
+  a.home__title--btn:hover {
+    box-shadow: 5px 15px 20px #ededed;
+    color: #222222;
+    background-color: lightskyblue;
+    transform: translateY(-7px); }
+
+i.far.fa-eye {
+  margin-top: 10px; }
 
 span {
   color: #56a79a; }

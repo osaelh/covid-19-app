@@ -234,7 +234,7 @@ function showResult(severity) {
   startBtn.textContent = ' Recommencer le test'
   startBtn.addEventListener('click', reload)
 
-  header.innerText = "Résultats";
+  result.innerText = "Résultats";
 }
 
 function reload() {

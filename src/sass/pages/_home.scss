@@ -42,4 +42,12 @@ width: 30em;
     }
     }
 
+    a.home__title--btn {
+        max-width: 30em;
+  @include button;
+  @include hover();
+    }
+    i.far.fa-eye {
+        margin-top: 10px;
+    }
    
