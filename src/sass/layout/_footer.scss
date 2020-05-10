@@ -23,6 +23,7 @@ footer{
         width: 26%;
       a{
           text-decoration: none;
+          color: black;
       }
     }
     .ending{
@@ -33,6 +34,6 @@ footer{
 }
 @media only screen and (max-width:900px){
     .links{
-        margin-left: 13em;
+        margin-left: 15em;
     }
 }

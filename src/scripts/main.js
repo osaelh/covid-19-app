@@ -155,7 +155,7 @@ function nextQuestion() {
     }
   }
 
-  // parsing number , disabling nextbtn when out of min-max range
+  
   inputBox.addEventListener("change", (event) => {
     let input = event.target;
 

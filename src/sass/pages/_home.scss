@@ -50,4 +50,13 @@ width: 30em;
     i.far.fa-eye {
         margin-top: 10px;
     }
+
+    @media only screen and (max-width: 800px){
+        .bottom-unit{
+            width: 340%;
+        }
+        .col-xs-12.col-sm-4.col-md-4.col-lg-4{
+            margin-right: 4em;
+        }
+    }
    

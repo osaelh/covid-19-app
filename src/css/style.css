@@ -447,7 +447,8 @@ footer {
     padding-bottom: 1em;
     width: 26%; }
     footer .links a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: black; }
   footer .ending {
     height: 2em;
     width: 102%;
@@ -455,7 +456,7 @@ footer {
 
 @media only screen and (max-width: 900px) {
   .links {
-    margin-left: 13em; } }
+    margin-left: 15em; } }
 
 button {
   text-transform: uppercase;
@@ -475,7 +476,7 @@ button {
   button:hover {
     box-shadow: 5px 15px 20px #ededed;
     color: #222222;
-    background-color: lightskyblue;
+    background-color: white;
     transform: translateY(-7px); }
 
 .prot {
@@ -757,11 +758,17 @@ a.home__title--btn {
   a.home__title--btn:hover {
     box-shadow: 5px 15px 20px #ededed;
     color: #222222;
-    background-color: lightskyblue;
+    background-color: white;
     transform: translateY(-7px); }
 
 i.far.fa-eye {
   margin-top: 10px; }
+
+@media only screen and (max-width: 800px) {
+  .bottom-unit {
+    width: 340%; }
+  .col-xs-12.col-sm-4.col-md-4.col-lg-4 {
+    margin-right: 4em; } }
 
 span {
   color: #56a79a; }
