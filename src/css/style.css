@@ -476,7 +476,7 @@ button {
   button:hover {
     box-shadow: 5px 15px 20px #ededed;
     color: #222222;
-    background-color: white;
+    background-color: #1078AD;
     transform: translateY(-7px); }
 
 .prot {
@@ -758,7 +758,7 @@ a.home__title--btn {
   a.home__title--btn:hover {
     box-shadow: 5px 15px 20px #ededed;
     color: #222222;
-    background-color: white;
+    background-color: #1078AD;
     transform: translateY(-7px); }
 
 i.far.fa-eye {
