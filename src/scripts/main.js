@@ -231,7 +231,7 @@ function showResult(severity) {
   Préambule.style.display = 'block'
   questionnaire.style.display = 'none'
   startBtn.textContent = ' Recommencer le test'
-  startBtn.addEventListener('click', reload())
+  startBtn.addEventListener('click', reload)
 
   result.innerText = "Résultats";
 }
