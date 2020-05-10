@@ -203,6 +203,7 @@ $DARKBLUE: hsl(200, 83%, 37%);
         border-radius: 4px;
         transition: .3s ease;
         margin-right: 6rem;
+        max-width: 20em;
         &:hover {
             background-color: $primarycolor;
             color: white;

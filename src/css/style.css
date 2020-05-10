@@ -702,7 +702,8 @@ button {
     border: 2px solid #1a519e;
     border-radius: 4px;
     transition: .3s ease;
-    margin-right: 6rem; }
+    margin-right: 6rem;
+    max-width: 20em; }
     .btn-container button:hover {
       background-color: #1a519e;
       color: white; }
