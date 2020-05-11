@@ -8,7 +8,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 sass.compiler = require('node-sass');
-
+const terser = require('gulp-terser');
 
 
 gulp.task('message',async function(){
@@ -49,7 +49,7 @@ return gulp.src(jsFiles)
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest(jsDest))
     .pipe(rename('scripts.min.js'))
-    .pipe(uglify())
+    .pipe(terser())
     .pipe(gulp.dest(jsDest));
 });
 
@@ -57,4 +57,4 @@ return gulp.src(jsFiles)
     gulp.watch('src/sass/**/*.scss', gulp.series(['sass','styles']));
 })
 
-gulp.task('build', gulp.series('images', 'styles','sass','scripts'));
+gulp.task('build', gulp.series('images','scripts'));
