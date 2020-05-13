@@ -16,15 +16,21 @@ let questions = [{
   },
 },
 {
-  question: "Quel est votre âge ? Ceci, afin de calculer un facteur de risque spécifique.",
+  question: "Avez-vous des difficultés importantes pour vous alimenter ou boire depuis plus de 24h ?",
 
-    input: {
-        type: "number",
-        qNumber: "Q2",
-        name: "ans",
-        min: 15,
-        max: 110,
-    },
+  input: {
+      type: "radio",
+      qNumber: "Q1",
+      answer: [{
+              text: "Oui",
+              icon: "fa-check",
+          },
+          {
+              text: "Non",
+              icon: "fa-times",
+          },
+      ],
+  },
 },
 {
   question: "Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?",
@@ -98,21 +104,15 @@ function showQuestion(question) {
   answerInputs.innerHTML = "";
   let inputAnswer = question.input.answer;
   let input = question.input;
-
-  if (question.input.type === "radio") {
-      inputAnswer.forEach((answer) => {
-          answerInputs.innerHTML += `
-                  <div>
-                      <input type="radio" name="${input.qNumber}" id="${answer.text}">
-                      <label for="${answer.text}">
-                      <i class="fas ${answer.icon}"></i>
-                      <span>${answer.text}</span> </label>
-                  </div>`;
-      });
-  } else {
-      answerInputs.innerHTML += `<input type="number" name="${input.qNumber}" id="${input.name}" min="${input.min}" max="${input.max}" placeholder="${input.min} - ${input.max}">
-                                  <span class="input-span">${input.name}</span>`;
-  }
+  inputAnswer.forEach((answer) => {
+    answerInputs.innerHTML += `
+            <div>
+                <input type="radio" name="${input.qNumber}" id="${answer.text}">
+                <label for="${answer.text}">
+                <i class="fas ${answer.icon}"></i>
+                <span>${answer.text}</span> </label>
+            </div>`;
+});
 }
 
 nextBtn.addEventListener('click', nextQuestion)
