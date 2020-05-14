@@ -454,10 +454,6 @@ footer {
     width: 102%;
     background-color: #1078AD; }
 
-@media only screen and (max-width: 900px) {
-  .links {
-    margin-left: 15em; } }
-
 button {
   text-transform: uppercase;
   background-color: lightblue;
@@ -532,7 +528,12 @@ button {
     .prot .cons1__para {
       font-size: .9em;
       font-weight: bold;
-      text-align: center; } }
+      text-align: center; }
+  body > section.prot > div.Protege > div:nth-child(1) > div.cons__img {
+    margin-top: 3.5em; } }
+
+body > section.prot > div.Protege > div:nth-child(1) > div.cons__img {
+  margin-top: 3.5em; }
 
 #Préambule {
   width: 70%;
@@ -709,11 +710,14 @@ button {
       background-color: #1a519e;
       color: white; }
 
+.showcase .image {
+  width: 100%; }
+
 .symptoms .bottom-unit {
   margin-top: 5em; }
 
 .symptoms .fiever {
-  width: 25%; }
+  width: 2em; }
 
 .recomendations {
   background-color: #1078AD; }
@@ -765,10 +769,8 @@ i.far.fa-eye {
   margin-top: 10px; }
 
 @media only screen and (max-width: 800px) {
-  .bottom-unit {
-    width: 340%; }
-  .col-xs-12.col-sm-4.col-md-4.col-lg-4 {
-    margin-right: 4em; } }
+  body > section.recomendations > div > div > div > div.col-xs-12.col-sm-4.col-md-4.col-lg-4 {
+    margin-right: 3em; } }
 
 span {
   color: #56a79a; }

@@ -87,7 +87,7 @@ console.log(previousBtn)
 let currentQuestionIndex = 0;
 
 // start test (hiding startbtn and preambule ,showing question section)
-startBtn.addEventListener("click", startTest);
+startBtn.addEventListener("click", startTest,true);
 function startTest() {
   stepper[0].classList.remove("active");
   stepper[1].classList.add("active");
@@ -177,7 +177,7 @@ let severity = 0;
 
 function Results() {
   // patient with no symptoms  
-    if ((answers['Q1'] === 'Non') && (answers['Q3'] === 'Non') && (answers['Q4'] === 'Non')) {
+    if ((answers['Q1'] === 'Non') && (answers['Q3'] === 'Non') && (answers['Q4'] === 'Non') ) {
 
       resultMessage.innerText = 'Votre situation ne relève probablement pas du Covid-19.' +
       'N’hésitez pas à contacter votre médecin en cas de doute.' + 'Vous pouvez refaire le test en cas de nouveau symptôme pour réévaluer la situation.' + 'Pour toute information concernant le Covid-19 allez vers la page d’accueil.'
@@ -211,7 +211,7 @@ function Results() {
       resultMessage.style.color = '#369D53'
   }
   // patient with fever and  cough
-  if ((answers['Q1'] === 'Oui') && (answers['Q3'] === 'Oui') && (answers['Q4'] === 'Non') && (answers['Q2'] === 'Non')){
+  if (((answers['Q1'] === 'Oui') && (answers['Q3'] === 'Oui') && (answers['Q4'] === 'Non') && (answers['Q2'] === 'Non')) || (answers['Q1'] === 'Oui') && (answers['Q3'] === 'Oui') && (answers['Q4'] === 'Oui') && (answers['Q2'] === 'Non')){
     resultMessage.innerText = "Vous pouvez faire une téléconsultation ou médecin généraliste ou visite à domi" +
     "cile. Appelez le 141 si une gêne respiratoire ou des difficultés importantes p" +
     "our s’alimenter ou boire pendant plus de 24h apparaissent."
@@ -222,7 +222,7 @@ function Results() {
     resultMessage.style.color = '#369D53'
   }
   // patient with fever and  cough (with aggravating prognostic)
-  if ((answers['Q1'] === 'Oui') && (answers['Q3'] === 'Oui') && (answers['Q4'] === 'Non') && (answers['Q2'] === 'Oui')){
+  if (((answers['Q1'] === 'Oui') && (answers['Q3'] === 'Oui') && (answers['Q4'] === 'Non') && (answers['Q2'] === 'Oui')) || (answers['Q1'] === 'Oui') && (answers['Q3'] === 'Oui') && (answers['Q4'] === 'Oui') && (answers['Q2'] === 'Oui')){
     resultMessage.innerText = "Appelez le 141"
     resultMessage2.innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
             'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
@@ -245,6 +245,9 @@ function Results() {
                 'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
         resultMessage.style.fontWeight = 'bold'
         resultMessage.style.color = '#369D53'
+  } else {
+    resultMessage2.innerText = 'Restez chez vous au maximum en attendant que les symptômes disparaissent. Pren' +
+                'ez votre température deux fois par jour. Rappel des mesures d’hygiène.'
   }
      showResult(severity)
   
@@ -261,11 +264,14 @@ function showResult(severity) {
   Préambule.style.display = 'block'
   questionnaire.style.display = 'none'
   startBtn.textContent = ' Recommencer le test'
-  startBtn.addEventListener('click', reload)
+  // startBtn.removeEventListener("click", startTest,true);
+  startBtn.addEventListener('click', reload());
 
   result.innerText = "Résultats";
 }
 
 function reload() {
-  window.location.reload()
+  
+  window.location.href = "test.html";
+
 }
