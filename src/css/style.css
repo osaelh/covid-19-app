@@ -642,7 +642,7 @@ body > section.prot > div.Protege > div:nth-child(1) > div.cons__img {
       overflow: visible; }
       #questionnaire .progress__bar .bar {
         height: 100%;
-        width: calc(1 * calc(100% / 22));
+        width: calc(1 * calc(100% / 4));
         background-color: #1a519e;
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;

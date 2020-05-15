@@ -260,18 +260,18 @@ function showResult(severity) {
   stepper[2] .classList.add('active')
      
       
-  startBtn.style.display = 'block'
+  // startBtn.style.display = ''
   Préambule.style.display = 'block'
   questionnaire.style.display = 'none'
-  startBtn.textContent = ' Recommencer le test'
+  // startBtn.textContent = ' Recommencer le test'
   // startBtn.removeEventListener("click", startTest,true);
-  startBtn.addEventListener('click', reload());
+  // startBtn.addEventListener('click', reload);
 
   result.innerText = "Résultats";
 }
 
 function reload() {
   
-  window.location.href = "test.html";
+  window.location.reload();
 
 }

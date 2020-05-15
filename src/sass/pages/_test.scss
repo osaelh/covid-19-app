@@ -129,7 +129,7 @@ $DARKBLUE: hsl(200, 83%, 37%);
             overflow: visible;
             .bar {
                 height: 100%;
-                width: calc(1 * calc(100% / 22));
+                width: calc(1 * calc(100% / 4));
                 background-color: $primarycolor;
                 border-bottom-left-radius: 20px;
                 border-top-left-radius: 20px;
